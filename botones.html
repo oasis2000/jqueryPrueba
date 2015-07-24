@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Botones</title>
+    <link rel="stylesheet"
+          href="css/jquery.mobile-1.4.5.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+<div id="pag1" data-role="page">
+    <div data-role="header" data-theme="b" data-position="fixed">
+        <h1>Mi encabezado 1</h1>
+    </div>
+    <div data-role="content">
+        <button class="ui-btn">Button</button>
+        <button class="ui-btn ui-mini">Button</button>
+        <br>
+        <div>
+            <ul data-role="listview">
+                <li><a href="https://www.google.es/">Google</a>
+                <li><a href="https://www.facebook.com/">Facebook</a>
+                <li><a href="http://www.fnac.es/">Fnac</a>
+                <li><a href="#popupBasic" data-rel="popup">Open Popup</a>
+            </ul>
+        </div>
+
+        <div data-role="popup" id="popupBasic">
+            <p>This is a completely basic popup, no options set.
+
+            <p>
+        </div>
+
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <h1>Mi pie 1</h1>
+    </div>
+</div>
+</body>
+</html>

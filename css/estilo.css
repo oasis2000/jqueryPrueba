@@ -1,0 +1,15 @@
+#pag1.ui-page {
+    background: url("../img/gothKitty.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
+label {
+    font: normal 60pt Arial;
+    color: white;
+    text-shadow: 2px 1px 0 #ccc,
+    1px 1px 0 #c9c9c9;
+}

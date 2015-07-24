@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Filtros</title>
+    <link rel="stylesheet"
+          href="css/jquery.mobile-1.4.5.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(document).ready(function() {
+            var v1 = $("#lista1").find("li").eq(2);
+            v1.css("background-color", "yellow");
+                    var v2 = v1.next();
+                    v2.css("background-color", "yellow");
+                    v1.parent().attr("id","nombre1");
+                    var v3 = $("#lista2").find("li").eq(0);
+                    v3.parent().find("li").css("background-color", "red");
+                }
+        );
+    </script>
+</head>
+<body>
+
+    <ul id="lista1" data-role="listview" data-inset="true">
+        <li>Uno
+        <li>Dos
+        <li>Tres
+        <li>Cuatro
+        <li>Cinco
+        <li>Seis
+        <li>Siete
+        <li>Ocho
+        <li>Nueve
+        <li>Diez
+    </ul>
+
+    <ul id="lista2" data-role="listview" data-inset="true">
+        <li>UnoUno
+        <li>DosDos
+        <li>TresTres
+        <li>CuatroCuatro
+        <li>CincoCinco
+        <li>SeisSeis
+        <li>SieteSiete
+        <li>OchoOcho
+        <li>NueveNueve
+        <li>DiezDiez
+    </ul>
+
+    <ul id="lista3" data-role="listview" data-inset="true">
+        <li>UnoUnoUno
+        <li>DosDosDos
+        <li>TresTresTres
+        <li>CuatroCuatroCuatro
+        <li>CincoCincoCinco
+        <li>SeisSeisSeis
+        <li>SieteSieteSiete
+        <li>OchoOchoOcho
+        <li>NueveNueveNueve
+        <li>DiezDiezDiez
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(document).ready(function(){
+                    //$("p").css("background-color","yellow");
+                    $("p.p1").css("background-color","aqua");
+                    $("#p2").css("background-color","blue");
+                    $("a:contains('Google')" ).css("background-color","red");
+                    $("li:first").css("background-color","green");
+                    $("li:nth-of-type(5)").css("background-color","pink");
+                    $("li:last").css("background-color","hotpink");
+                    console.log("ready");
+                }
+        );
+        $(window).load(
+                function(){
+                    console.log("loaded");
+                }
+        );
+    </script>
+</head>
+<body>
+    <div>
+        <p class="p1">
+            Párrafo1
+        </p>
+        <p id="p2">
+            Párrafo2
+        </p>
+        <div>
+            <a href="https://www.google.es/">Google</a><br>
+            <a href="http://www.netmind.es/">Netmind</a>
+        </div>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+            <li>Cuatro</li>
+            <li>Cinco</li>
+            <li>Seis</li>
+            <li>Siete</li>
+            <li>Ocho</li>
+            <li>Nueve</li>
+            <li>Diez</li>
+        </ul>
+    </div>
+</body>
+</html>

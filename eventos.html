@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+    <link rel="stylesheet"
+          href="css/jquery.mobile-1.4.5.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#miBoton").click(function() {
+                console.log("Hola");
+            });
+            $("a:contains('Google')").bind({
+                mouseover: function() {
+                    console.log("Mouse Enter");
+                },
+                mouseout: function() {
+                    console.log("Mouse Leave");
+                }
+            });
+            $("#loginForm input:first").blur(function () {
+                if ($("input:text").is(":empty")) {
+                    alert("¡¡Campo Nombre Vacío!!");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+<form id="loginForm">
+    <div class="ui-field-contain">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" value="" required>
+    </div>
+    <div class="ui-field-contain">
+        <label for="mail">Email:</label>
+        <input type="email" name="mail" id="mail" value="" required>
+    </div>
+    <button type="submit" class="ui-shadow ui-btn ui-corner-all">Submit</button>
+</form>
+
+<div>
+    <button id="miBoton" class="ui-btn ui-corner-all">Button</button>
+</div>
+
+<div>
+    <a href="https://www.google.es/">Google</a>
+</div>
+
+</body>
+</html>

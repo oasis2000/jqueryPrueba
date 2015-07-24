@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Más JQuery</title>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(document).ready(function(){
+                    $("body").append("<p>Hola</p>");
+                    $("body").append('<p id="HolaHola">HolaHola</p>');
+                    $('<p>HolaHolaHola</p>').insertBefore("#HolaHola");
+                    $("p:last").css("background-color","hotpink");
+                    $("p:last").attr("id","Adios");
+                    $("p:last").removeAttr('id');
+                    $("p:last").addClass("rojo");
+                    var clases = $("p:last").attr("class");
+                    console.log(clases);
+                    $("body").append('<form id="loginForm"></form>');
+                    $("#loginForm").append('Nombre:<input type="text"/><br>');
+                    $("#loginForm").append('Email:<input type="email"/><br>');
+                    $("#loginForm").append('<button type="submit">Submit</button>');
+                    var formInput = $("#loginForm").find("input").eq(0);
+                    formInput.attr("id","nombre")
+
+                }
+        );
+    </script>
+</head>
+<body>
+
+</body>
+</html>
